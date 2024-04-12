@@ -1,6 +1,9 @@
 const privatPerson = document.querySelector('#user_type_1')
 const foretagsKund = document.querySelector('#user_type_2')
 
+const foretagForm = document.querySelector('#betalning-foretag')
+const privatForm = document.querySelector('#betalning-privat')
+
 privatPerson.addEventListener('click', () => {
   clickFunction('privatperson')
   privatPerson.classList.add('selected-button')
@@ -15,8 +18,13 @@ foretagsKund.addEventListener('click', () => {
 
 function clickFunction (kundTyp) {
   if (kundTyp === 'företag') {
-    console.log('ebem')
-  } else {
-    console.log('ebem2')
+    foretagForm.style.display = 'block'
+    privatForm.style.display = 'none'
+    return
+  }
+  if (kundTyp === 'privatperson') {
+    privatForm.style.display = 'block'
+    foretagForm.style.display = 'none'
+    return
   }
 }

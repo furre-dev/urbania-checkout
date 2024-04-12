@@ -82,3 +82,15 @@ body {
   border-color: #51d06e;
   color: #000;
 }
+
+#betalning-privat {
+  display: none;
+}
+
+#betalning-privat,
+#betalning-foretag {
+  background-color: #1272A9;
+  color: white;
+  padding: 45px;
+  margin: 40px 0px;
+}
