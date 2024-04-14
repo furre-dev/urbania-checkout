@@ -13,6 +13,40 @@ body {
   font-weight: 700;
 }
 
+#checkout-form {
+  display: flex;
+  justify-content: center;
+}
+
+#progress-aside {
+  padding-top: 87px;
+  width: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.progress-step {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border: solid 3px #51D06E;
+  border-radius: 999999px;
+  font-size: 1.2rem;
+}
+
+.progress-line:nth-child(2) {
+  height: 320px;
+}
+
+.progress-line {
+  background: #51D06E;
+  width: 4px;
+  height: 260px;
+}
+
 #kassan-h1 {
   max-width: 100%;
   margin: 0 0 50px -50px
@@ -21,7 +55,6 @@ body {
 .checkout-container {
   width: 100%;
   max-width: 680px;
-  margin: 0 auto 0 auto;
   padding: 0 24px;
 }
 
